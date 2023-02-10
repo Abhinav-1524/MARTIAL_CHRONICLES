@@ -15,6 +15,6 @@ Welcome to Mars Rover API Images, a project that provides access to a collection
 Using the Mars Rover API Images is easy! Simply send a request to the API with the desired parameters (rover, camera, date, etc.), and the API will return the images you want.The GUI is very user-friendly so u don't have to be worried.
 
 
-** ----------------------------------------------------------------------THANK YOU---------------------------------------------------------------------- **
+
 
 
