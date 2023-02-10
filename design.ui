@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(119, 118, 123);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
@@ -23,6 +26,9 @@
       <height>521</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 13, 54);</string>
+    </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_4">
       <property name="geometry">
@@ -32,6 +38,9 @@
         <width>63</width>
         <height>22</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(165, 29, 45);</string>
       </property>
       <property name="text">
        <string>ROVER :</string>
@@ -49,6 +58,9 @@
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
         <widget class="QRadioButton" name="radioButton_3">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(37, 213, 237);</string>
+         </property>
          <property name="text">
           <string>CURIOSITY</string>
          </property>
@@ -56,6 +68,9 @@
        </item>
        <item>
         <widget class="QRadioButton" name="radioButton_2">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(37, 213, 237);</string>
+         </property>
          <property name="text">
           <string>SPIRIT</string>
          </property>
@@ -63,6 +78,9 @@
        </item>
        <item>
         <widget class="QRadioButton" name="radioButton">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(37, 213, 237);</string>
+         </property>
          <property name="text">
           <string>OPPURTUNITY</string>
          </property>
@@ -78,6 +96,9 @@
         <width>63</width>
         <height>22</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(165, 29, 45);</string>
       </property>
       <property name="text">
        <string>CAMERA :</string>
@@ -95,6 +116,9 @@
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
         <widget class="QRadioButton" name="radioButton_6">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(37, 213, 237);</string>
+         </property>
          <property name="text">
           <string>FHAZ</string>
          </property>
@@ -102,6 +126,9 @@
        </item>
        <item>
         <widget class="QRadioButton" name="radioButton_4">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(37, 213, 237);</string>
+         </property>
          <property name="text">
           <string>NAVCAM</string>
          </property>
@@ -109,6 +136,9 @@
        </item>
        <item>
         <widget class="QRadioButton" name="radioButton_5">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(37, 213, 237);</string>
+         </property>
          <property name="text">
           <string>RHAZ</string>
          </property>
@@ -125,6 +155,9 @@
         <height>22</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(165, 29, 45);</string>
+      </property>
       <property name="text">
        <string>EARTH DATE :</string>
       </property>
@@ -138,15 +171,23 @@
         <height>232</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 13, 54);
+color: rgb(224, 27, 36);
+alternate-background-color: rgb(0, 13, 54);</string>
+      </property>
      </widget>
      <widget class="QPushButton" name="pushButton_8">
       <property name="geometry">
        <rect>
         <x>620</x>
-        <y>440</y>
+        <y>430</y>
         <width>131</width>
         <height>61</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(37, 213, 237);</string>
       </property>
       <property name="text">
        <string>FETCH</string>
@@ -169,15 +210,32 @@
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
+      <widget class="QProgressBar" name="progressBar">
+       <property name="geometry">
+        <rect>
+         <x>7</x>
+         <y>270</y>
+         <width>721</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
      </widget>
      <widget class="QPushButton" name="pushButton_3">
       <property name="geometry">
        <rect>
-        <x>500</x>
+        <x>490</x>
         <y>450</y>
         <width>103</width>
         <height>38</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(13, 98, 82);
+color: rgb(37, 213, 237);</string>
       </property>
       <property name="text">
        <string>NEXT</string>
@@ -192,6 +250,10 @@
         <height>38</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(13, 98, 82);
+color: rgb(37, 213, 237);</string>
+      </property>
       <property name="text">
        <string>PREVIOUS</string>
       </property>
@@ -200,13 +262,14 @@
       <property name="geometry">
        <rect>
         <x>330</x>
-        <y>430</y>
+        <y>420</y>
         <width>131</width>
         <height>81</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">background-color: rgb(13, 98, 82);
+color: rgb(37, 213, 237);</string>
       </property>
       <property name="text">
        <string>SHARE</string>
@@ -223,6 +286,9 @@
         <height>51</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(165, 29, 45);</string>
+      </property>
       <property name="text">
        <string>TO :</string>
       </property>
@@ -236,6 +302,10 @@
         <height>41</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(154, 153, 150);
+color: rgb(0, 0, 0);</string>
+      </property>
      </widget>
      <widget class="QLabel" name="label_2">
       <property name="geometry">
@@ -245,6 +315,9 @@
         <width>71</width>
         <height>41</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(165, 29, 45);</string>
       </property>
       <property name="text">
        <string>SUBJECT :</string>
@@ -259,6 +332,10 @@
         <height>41</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(154, 153, 150);
+color: rgb(0, 0, 0);</string>
+      </property>
      </widget>
      <widget class="QLabel" name="label_3">
       <property name="geometry">
@@ -268,6 +345,9 @@
         <width>81</width>
         <height>41</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(134, 5, 5);</string>
       </property>
       <property name="text">
        <string>BODY :</string>
@@ -282,6 +362,10 @@
         <height>191</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(154, 153, 150);
+color: rgb(0, 0, 0);</string>
+      </property>
      </widget>
      <widget class="QPushButton" name="pushButton_6">
       <property name="geometry">
@@ -291,6 +375,10 @@
         <width>121</width>
         <height>51</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(13, 98, 82);
+color: rgb(37, 213, 237);</string>
       </property>
       <property name="text">
        <string>SEND ALL</string>
@@ -304,6 +392,10 @@
         <width>121</width>
         <height>51</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(13, 98, 82);
+color: rgb(37, 213, 237);</string>
       </property>
       <property name="text">
        <string>SEND</string>
@@ -321,7 +413,9 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">background-color: rgb(0, 13, 54);
+background-color: rgb(13, 98, 82);
+color: rgb(37, 213, 237);</string>
     </property>
     <property name="text">
      <string>IMAGE</string>
@@ -335,6 +429,10 @@
       <width>411</width>
       <height>71</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(13, 98, 82);
+color: rgb(37, 213, 237);</string>
     </property>
     <property name="text">
      <string>FETCH PAGE</string>

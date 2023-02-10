@@ -22,6 +22,7 @@ class App(QMainWindow):
         #variable declaration
         self.num = 0
         self.image_list =[]
+        
 
 
         #rove radio buttons
@@ -96,6 +97,8 @@ class App(QMainWindow):
         self.subject=self.findChild(QLineEdit,'lineEdit_2')
         self.body=self.findChild(QLineEdit,'lineEdit_3')
         
+        # self.progress=self.findChild(QProgressBar,'progressBar')
+        # self.pushButton_8.clicked.connect(self.download)
         
         
 
@@ -150,6 +153,7 @@ class App(QMainWindow):
 
     def fetch(self):
         try:
+            
             data = requests.get(f"https://api.nasa.gov/mars-photos/api/v1/rovers/{self.Rover()}/photos?camera={self.camera()}&earth_date={self.dateSelected()}&api_key={API_KEY}")
             self.rover_data = data.json()
             print(len(self.rover_data['photos']))
@@ -166,6 +170,7 @@ class App(QMainWindow):
                         self.num=self.num+1
                         urllib.request.urlretrieve(f"{pic['img_src']}",f"image{self.num}.jpg")
                         self.image_list.append(f"image{self.num}.jpg")
+                        
                     
         except:
             callinstance=Photo_error()
@@ -224,6 +229,13 @@ class App(QMainWindow):
         self.label.show()
 
         
+#progress bar
+    # def download(self):
+    #         self.completed = len(self.rover_data['photos'])
+
+    #         while self.num < self.completed:
+                
+    #             self.progress.setValue(self.num)
 
        
 #mailing events
@@ -291,7 +303,6 @@ class Api_error(QDialog):
 
    
 
-  
 
 
 
